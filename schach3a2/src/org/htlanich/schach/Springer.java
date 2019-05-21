@@ -16,4 +16,8 @@ public class Springer extends Figur {
 		// TODO implement
 		return false;
 	}
+	
+	public String toString() {
+		return "S" + super.toString();
+	}
 }
