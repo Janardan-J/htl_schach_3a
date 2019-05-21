@@ -20,4 +20,4 @@ A chess game for practicing object-oriented programming in Java. This repository
 
 * Spielfeld-I/O: Albert
 
-* Spiellogik: Joshua
+* Projektleiter: Joshua
