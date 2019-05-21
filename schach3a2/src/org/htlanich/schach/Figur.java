@@ -1,5 +1,10 @@
 package org.htlanich.schach;
 
+/**
+ * Die Basisklasse aller Figuren
+ * @author albert
+ *
+ */
 public class Figur extends Feld {
 	private boolean farbeWeiss;
 	private boolean bewegt;
