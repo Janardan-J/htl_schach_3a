@@ -15,4 +15,9 @@ public class Bauer extends Figur {
 		// TODO: implement
 		return false;
 	}
+	
+	@Override
+	public String toString() {
+		return "B" + super.toString();
+	}
 }
