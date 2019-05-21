@@ -1,5 +1,10 @@
 package org.htlanich.schach;
 
+/**
+ * Die Klasse Turm
+ * @author albert
+ *
+ */
 public class Turm extends Figur {
 
 	public Turm(boolean farbeWeiss, boolean bewegt) {
