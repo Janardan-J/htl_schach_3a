@@ -25,7 +25,7 @@ public class SpielFeld {
 		this.werAmZug = werAmZug;
 	}
 	
-	//Ausgabe geändert!
+	//Ausgabe geändert
 	public void ausgabe() {
 		for(int i=0;i<mat.length;i++) {
 			for(int j=0;j<mat.length;j++) {
