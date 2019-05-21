@@ -16,4 +16,10 @@ public class Dame extends Figur {
 		// TODO: implement
 		return false;
 	}
+	public String toString()
+	{	
+		
+		return "D"+ super.toString();
+	}
+	
 }
