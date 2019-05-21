@@ -1,5 +1,10 @@
 package org.htlanich.schach;
 
+/**
+ * Die Klasse Turm
+ * @author albert
+ *
+ */
 public class Turm extends Figur {
 
 	public Turm(boolean farbeWeiss, boolean bewegt) {
@@ -16,4 +21,11 @@ public class Turm extends Figur {
 		// TODO implement
 		return false;
 	}
+	
+	@Override
+	public String toString() {
+		
+		return "T" + super.toString();
+	}
+	
 }
