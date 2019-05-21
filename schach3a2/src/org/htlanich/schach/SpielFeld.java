@@ -24,7 +24,8 @@ public class SpielFeld {
 	public void setWerAmZug(boolean werAmZug) {
 		this.werAmZug = werAmZug;
 	}
-
+	
+	//Ausgabe geändert
 	public void ausgabe() {
 		for(int i=0;i<mat.length;i++) {
 			for(int j=0;j<mat.length;j++) {
