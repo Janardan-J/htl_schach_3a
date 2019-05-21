@@ -6,4 +6,9 @@ package org.htlanich.schach;
  *
  */
 public class Feld {
+	
+	public String toString() {
+		return "__" + super.toString();
+	}
+	
 }
