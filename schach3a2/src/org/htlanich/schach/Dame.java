@@ -16,7 +16,7 @@ public class Dame extends Figur {
 		// TODO: implement
 		return false;
 	}
-	public String toString()
+	public String toString()				// damit man die Dame auf dem Spielfeld erkennt
 	{	
 		
 		return "D"+ super.toString();
