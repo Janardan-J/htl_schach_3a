@@ -39,4 +39,11 @@ public class Figur extends Feld {
 		// TODO: implement
 		return false;
 	}
+	
+	@Override
+	public String toString() {
+		
+		if (farbeWeiss) return "W";
+		return "B";
+	}
 }

@@ -16,4 +16,11 @@ public class Turm extends Figur {
 		// TODO implement
 		return false;
 	}
+	
+	@Override
+	public String toString() {
+		
+		return "T" + super.toString();
+	}
+	
 }
