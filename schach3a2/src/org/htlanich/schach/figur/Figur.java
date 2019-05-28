@@ -6,48 +6,43 @@ import org.htlanich.schach.SpielFeld;
 
 /**
  * Die Basisklasse aller Figuren
- * @author albert
  *
+ * @author albert
  */
-public class Figur extends Feld {
-	private boolean farbeWeiss;
-	private boolean bewegt;
+public abstract class Figur extends Feld {
 
-	public Figur(boolean farbeWeiss, boolean bewegt) {
-		this.farbeWeiss = farbeWeiss;
-		this.bewegt = bewegt;
-	}
+    private boolean farbeWeiss;
+    private boolean bewegt;
 
-	public boolean isFarbeWeiss() {
-		return farbeWeiss;
-	}
+    public Figur(boolean farbeWeiss, boolean bewegt) {
+        this.farbeWeiss = farbeWeiss;
+        this.bewegt = bewegt;
+    }
 
-	public void setFarbeWeiss(boolean farbeWeiss) {
-		this.farbeWeiss = farbeWeiss;
-	}
+    public boolean isFarbeWeiss() {
+        return farbeWeiss;
+    }
 
-	public boolean isBewegt() {
-		return bewegt;
-	}
+    public void setFarbeWeiss(boolean farbeWeiss) {
+        this.farbeWeiss = farbeWeiss;
+    }
 
-	public void setBewegt(boolean bewegt) {
-		this.bewegt = bewegt;
-	}
+    public boolean isBewegt() {
+        return bewegt;
+    }
 
-	public boolean spielZug(SpielFeld sp, Position von, Position nach) {
-		// TODO: implement
-		return false;
-	}
+    public void setBewegt(boolean bewegt) {
+        this.bewegt = bewegt;
+    }
 
-	public boolean spielzugMoeglich(SpielFeld sp, Position von, Position nach) {
-		// TODO: implement
-		return false;
-	}
-	
-	@Override
-	public String toString() {
-		
-		if (farbeWeiss) return "W";
-		return "B";
-	}
+    public abstract boolean spielZug(SpielFeld sp, Position von, Position nach);
+
+    public abstract boolean spielzugMoeglich(SpielFeld sp, Position von, Position nach);
+
+    @Override
+    public String toString() {
+        if (farbeWeiss) return "W";
+        return "B";
+    }
+
 }
