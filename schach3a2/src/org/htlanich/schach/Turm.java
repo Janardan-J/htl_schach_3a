@@ -7,6 +7,10 @@ package org.htlanich.schach;
  */
 public class Turm extends Figur {
 
+	public Turm(boolean farbeWeiss)
+	{
+		super(farbeWeiss, false);
+	}
 	public Turm(boolean farbeWeiss, boolean bewegt) {
 		super(farbeWeiss, bewegt);
 		// TODO implement

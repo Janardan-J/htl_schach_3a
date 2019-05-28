@@ -4,6 +4,10 @@ public class SpielFeld {
 	private Feld[][] mat = new Feld[8][8];
 	private boolean werAmZug;
 
+	public SpielFeld(Feld[][] mat) {
+		this.mat = mat;
+	}
+	
 	public SpielFeld(Feld[][] mat, boolean werAmZug) {
 		this.mat = mat;
 		this.werAmZug = werAmZug;
@@ -24,9 +28,16 @@ public class SpielFeld {
 	public void setWerAmZug(boolean werAmZug) {
 		this.werAmZug = werAmZug;
 	}
-
+	
+	//Ausgabe geändert
 	public void ausgabe() {
-
+		for(int i=0;i<mat.length;i++) {
+			for(int j=0;j<mat.length;j++) {
+				String s= mat[i][j].toString();
+				System.out.print("|"+s);
+			}
+			System.out.println("|");
+		}
 	}
 
 	public boolean schach() {
@@ -45,3 +56,5 @@ public class SpielFeld {
 		return null;
 	}
 }
+//hi Josh
+//Lg Nof4ll
