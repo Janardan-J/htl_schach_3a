@@ -57,7 +57,7 @@ public class SpielFeld {
 	}
 	
 	public Feld getFeld (int x, int y) {
-		return mat[x][y]; 
+		return mat[x][y];
 	}
 }
 //hi Josh
