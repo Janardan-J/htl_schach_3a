@@ -1,5 +1,7 @@
 package org.htlanich.schach;
 
+import org.htlanich.schach.figur.Figur;
+
 /**
  * Ist stellvertretend für Leere Felder
  * @author albert

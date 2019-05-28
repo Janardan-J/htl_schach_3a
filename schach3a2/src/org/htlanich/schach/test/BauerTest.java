@@ -1,6 +1,6 @@
 package org.htlanich.schach.test;
 
-import org.htlanich.schach.Bauer;
+import org.htlanich.schach.figur.Bauer;
 import org.htlanich.schach.Position;
 import org.htlanich.schach.SpielFeld;
 import org.htlanich.schach.Spielfeldio;
