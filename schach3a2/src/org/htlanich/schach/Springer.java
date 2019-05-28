@@ -1,5 +1,5 @@
 package org.htlanich.schach;
-// Matteo
+// Matteo Juen
 public class Springer extends Figur {
 
 	public Springer(boolean farbeWeiss, boolean bewegt) {
