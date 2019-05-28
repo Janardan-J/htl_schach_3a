@@ -17,12 +17,6 @@ class TurmTest {
     @BeforeEach
     void setUp() throws FileNotFoundException {
         this.f1 = Spielfeldio.einlesen("testfelder/T1.txt");
-        for (int i = 0; i < f1.getMat().length; i++) {
-            for (int j = 0; j < f1.getMat()[i].length; j++) {
-                System.out.print(f1.getMat()[i][j]);
-            }
-            System.out.println();
-        }
     }
 
     @Test
