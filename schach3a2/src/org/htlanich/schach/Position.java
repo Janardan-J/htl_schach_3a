@@ -2,10 +2,10 @@ package org.htlanich.schach;
 
 public class Position 
 {
-	public byte x;
-	public byte y;
+	public int x;
+	public int y;
 	
-	public Position(byte x, byte y) {
+	public Position(int x, int y) {
 		this.x = x;
 		this.y = y;
 	}
