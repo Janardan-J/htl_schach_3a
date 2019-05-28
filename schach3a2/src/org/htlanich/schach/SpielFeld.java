@@ -1,7 +1,5 @@
 package org.htlanich.schach;
 
-
-
 public class SpielFeld {
 
     private Feld[][] mat;
@@ -37,9 +35,9 @@ public class SpielFeld {
         for (Feld[] aMat : mat) {
             for (int j = 0; j < mat.length; j++) {
                 String s = aMat[j].toString();
-                System.out.print("|" + s);
+                System.out.print(s + (mat.length - 1 != j ? "|" : ""));
             }
-            System.out.println("|");
+            System.out.println();
         }
     }
 
@@ -59,12 +57,8 @@ public class SpielFeld {
         return null;
     }
 
-    public Figur getFeld(int x, int y) {
-        return mat[x][y].getFigur();
-    }
-
-    public void setFeld(Figur figur, int x, int y) {
-        mat[x][y].setFigur(figur);
+    public Feld getFeld(int x, int y) {
+        return mat[x][y];
     }
 
 }
