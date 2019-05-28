@@ -14,9 +14,7 @@ class TurmTest {
 	
 	@BeforeEach
 	void setUp() throws Exception {
-		f1 = Spielfeldio.einlesen("testfelder/T1.txt");
-		
-		
+		f1 = Spielfeldio.einlesen("testfelder/T1.txt");	
 	}
 
 
