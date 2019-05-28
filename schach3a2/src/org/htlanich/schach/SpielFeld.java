@@ -1,7 +1,5 @@
 package org.htlanich.schach;
 
-import org.htlanich.schach.figur.Figur;
-
 public class SpielFeld {
 
     private Feld[][] mat;
@@ -59,12 +57,8 @@ public class SpielFeld {
         return null;
     }
 
-    public Figur getFeld(int x, int y) {
-        return mat[x][y].getFigur();
-    }
-
-    public void setFeld(Figur figur, int x, int y) {
-        mat[x][y].setFigur(figur);
+    public Feld getFeld(int x, int y) {
+        return mat[x][y];
     }
 
 }
