@@ -6,21 +6,24 @@ import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
+import java.io.FileNotFoundException;
+
 class SpielFeldTest {
-	SpielFeld start = null;
-	
-	@BeforeEach
-	void setUp() throws Exception {
-		start = Spielfeldio.einlesen("start.txt");
-	}
 
-	@AfterEach
-	void tearDown() throws Exception {
-	}
+    private SpielFeld start = null;
 
-	@Test
-	void testAusgabeStart() {
-		start.ausgabe();
-	}
+    @BeforeEach
+    void setUp() throws FileNotFoundException {
+        this.start = Spielfeldio.einlesen("start.txt");
+    }
+
+    @AfterEach
+    void tearDown() {
+    }
+
+    @Test
+    void testAusgabeStart() {
+        start.ausgabe();
+    }
 
 }
