@@ -3,7 +3,7 @@ package org.htlanich.schach.test;
 import org.htlanich.schach.Position;
 import org.htlanich.schach.SpielFeld;
 import org.htlanich.schach.Spielfeldio;
-import org.htlanich.schach.Springer;
+import org.htlanich.schach.figur.Springer;
 import org.junit.Assert;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;

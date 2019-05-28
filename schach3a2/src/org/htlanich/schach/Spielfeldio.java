@@ -1,5 +1,7 @@
 package org.htlanich.schach;
 
+import org.htlanich.schach.figur.*;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;

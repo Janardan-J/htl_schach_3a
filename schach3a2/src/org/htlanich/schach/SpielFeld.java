@@ -1,5 +1,7 @@
 package org.htlanich.schach;
 
+import org.htlanich.schach.figur.Figur;
+
 public class SpielFeld {
 
     private Feld[][] mat;
