@@ -37,9 +37,9 @@ public class SpielFeld {
         for (Feld[] aMat : mat) {
             for (int j = 0; j < mat.length; j++) {
                 String s = aMat[j].toString();
-                System.out.print("|" + s);
+                System.out.print(s + (mat.length - 1 != j ? "|" : ""));
             }
-            System.out.println("|");
+            System.out.println();
         }
     }
 
