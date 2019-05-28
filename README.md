@@ -8,11 +8,11 @@ A chess game for practicing object-oriented programming in Java. This repository
 
 * Bauer: Lukas E.
 
-* Läufer: Daniel H.
+* Läufer: Daniel H., Anton
 
 * Turm: Simon
 
-* Springer: Matteo
+* Springer: Matteo, Leonhard
 
 * König: Emre
 
