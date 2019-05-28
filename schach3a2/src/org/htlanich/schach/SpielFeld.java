@@ -55,6 +55,10 @@ public class SpielFeld {
 	public Position schach2koordinate(String schach) {
 		return null;
 	}
+	
+	public Feld getFeld (int x, int y) {
+		return mat[x][y];
+	}
 }
 //hi Josh
 //Lg Nof4ll
