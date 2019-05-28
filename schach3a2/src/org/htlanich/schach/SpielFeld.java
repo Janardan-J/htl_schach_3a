@@ -5,11 +5,11 @@ public class SpielFeld {
     private Feld[][] mat;
     private boolean werAmZug;
 
-    public SpielFeld( Feld[][] mat ) {
+    public SpielFeld(Feld[][] mat) {
         this(mat, true);
     }
 
-    public SpielFeld( Feld[][] mat, boolean werAmZug ) {
+    public SpielFeld(Feld[][] mat, boolean werAmZug) {
         this.mat = mat;
         this.werAmZug = werAmZug;
     }
@@ -18,7 +18,7 @@ public class SpielFeld {
         return mat;
     }
 
-    public void setMat( Feld[][] mat ) {
+    public void setMat(Feld[][] mat) {
         this.mat = mat;
     }
 
@@ -26,18 +26,18 @@ public class SpielFeld {
         return werAmZug;
     }
 
-    public void setWerAmZug( boolean werAmZug ) {
+    public void setWerAmZug(boolean werAmZug) {
         this.werAmZug = werAmZug;
     }
 
     //Ausgabe geändert
     public void ausgabe() {
-        for ( Feld[] aMat : mat ) {
-            for ( int j = 0; j < mat.length; j++ ) {
+        for (Feld[] aMat : mat) {
+            for (int j = 0; j < mat.length; j++) {
                 String s = aMat[j].toString();
-                System.out.print( "|" + s );
+                System.out.print("|" + s);
             }
-            System.out.println( "|" );
+            System.out.println("|");
         }
     }
 
@@ -49,20 +49,20 @@ public class SpielFeld {
         return false;
     }
 
-    public boolean spielzug( String zug ) {
+    public boolean spielzug(String zug) {
         return false;
     }
 
-    public Position schach2koordinate( String schach ) {
+    public Position schach2koordinate(String schach) {
         return null;
     }
-    
-	public Figur getFeld (int x, int y) {
-		return mat[x][y].getFigur();
-	}
-	
-	public void setFeld (Figur figur,int x, int y) {
-		mat[x][y].setFigur(figur);
-	}
+
+    public Figur getFeld(int x, int y) {
+        return mat[x][y].getFigur();
+    }
+
+    public void setFeld(Figur figur, int x, int y) {
+        mat[x][y].setFigur(figur);
+    }
 
 }
