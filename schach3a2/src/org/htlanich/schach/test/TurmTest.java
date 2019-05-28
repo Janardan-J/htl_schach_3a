@@ -19,9 +19,6 @@ class TurmTest {
 		
 	}
 
-	@AfterEach
-	void tearDown() throws Exception {
-	}
 
 	@Test
 	void testSpielzugMoeglich1() {
