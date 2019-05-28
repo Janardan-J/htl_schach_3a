@@ -13,8 +13,17 @@ public class Springer extends Figur {
 	}
 
 	public boolean spielzugMoeglich(SpielFeld sp, Position von, Position nach) {
-		// TODO implement
-		return false;
+		if((von.x == nach.x - 2 || von.x == nach.x + 2) && (von.y == nach.y - 1 || von.y == nach.y +1))
+		{
+			return true;
+		}
+		if((von.x == nach.x - 1 || von.x == nach.x + 1) && (von.y == nach.y - 2 || von.y == nach.y + 2))
+		{
+			return true;
+			
+		}else {
+			return false;
+		}
 	}
 	@Override
 	public String toString() {
