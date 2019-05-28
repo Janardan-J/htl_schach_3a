@@ -3,9 +3,8 @@ package org.htlanich.schach.test;
 import org.htlanich.schach.Position;
 import org.htlanich.schach.SpielFeld;
 import org.htlanich.schach.Spielfeldio;
-import org.htlanich.schach.Turm;
+import org.htlanich.schach.figur.Turm;
 import org.junit.Assert;
-import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 
