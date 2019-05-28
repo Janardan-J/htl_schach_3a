@@ -30,7 +30,7 @@ public class SpielFeld {
         this.werAmZug = werAmZug;
     }
 
-    //Spielfeld über Konsole Augeben
+    // Spielfeld über Konsole Augeben
     public void ausgabe() {
         for (Feld[] aMat : mat) {
             for (int j = 0; j < mat.length; j++) {
