@@ -29,29 +29,29 @@ class SpringerTest {
 
     @Test
     void testStartpositionNichtOk1() {
-        Springer s1 = (Springer) f1.getFeld(0, 1);
-        boolean nichtOk1 = s1.spielzugMoeglich(f1, new Position(0, 1), new Position(0, 2));
+        Springer s1 = (Springer) f1.getFeld(1, 0);
+        boolean nichtOk1 = s1.spielzugMoeglich(f1, new Position(1, 0), new Position(2, 0));
         Assert.assertFalse(nichtOk1);
     }
 
     @Test
     void testStartpositionNichtOk2() {
-        Springer s1 = (Springer) f2.getFeld(4, 5);
-        boolean nichtOk2 = s1.spielzugMoeglich(f2, new Position(4, 5), new Position(2, 4));
+        Springer s1 = (Springer) f2.getFeld(5, 4);
+        boolean nichtOk2 = s1.spielzugMoeglich(f2, new Position(5, 4), new Position(4, 2));
         Assert.assertTrue(nichtOk2);
     }
 
     @Test
     void testStartpositionOk1() {
-        Springer s1 = (Springer) f1.getFeld(0, 1);
-        boolean ok1 = s1.spielzugMoeglich(f1, new Position(0, 1), new Position(2, 2));
+        Springer s1 = (Springer) f1.getFeld(1, 0);
+        boolean ok1 = s1.spielzugMoeglich(f1, new Position(1, 0), new Position(2, 2));
         Assert.assertTrue(ok1);
     }
 
     @Test
     void testStartpositionOk2() {
-        Springer s1 = (Springer) f2.getFeld(4, 5);
-        boolean ok2 = s1.spielzugMoeglich(f2, new Position(4, 5), new Position(2, 6));
+        Springer s1 = (Springer) f2.getFeld(5, 4);
+        boolean ok2 = s1.spielzugMoeglich(f2, new Position(5, 4), new Position(6, 2));
         Assert.assertTrue(ok2);
     }
 
