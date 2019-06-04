@@ -7,6 +7,7 @@ import org.htlanich.schach.figur.Koenig;
 
 public class SpielFeld {
 
+	//(0,0) ist links oben
     private Feld[][] mat;
     private boolean werAmZug;
 
@@ -35,7 +36,7 @@ public class SpielFeld {
         this.werAmZug = werAmZug;
     }
 
-    // Spielfeld über Konsole Augeben
+    // Spielfeld ï¿½ber Konsole Augeben
     public void ausgabe() {
         for (Feld[] aMat : mat) {
             for (int j = 0; j < mat.length; j++) {
@@ -100,7 +101,12 @@ public class SpielFeld {
     }
 
     public Feld getFeld(int x, int y) {
-        return mat[x][y];
+        return mat[y][x];
+    }
+    
+    public boolean isFigur(int x, int y)
+    {
+    	return getFeld(x,y) instanceof Figur;
     }
 
 }

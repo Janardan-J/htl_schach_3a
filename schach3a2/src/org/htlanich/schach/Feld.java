@@ -2,14 +2,14 @@ package org.htlanich.schach;
 
 /**
  * Ist stellvertretend für Leere Felder
- * @author albert
  *
+ * @author albert
  */
 public class Feld {
-	
-	@Override
-	public String toString() {
-		return "__";
-	}
-	
+
+    @Override
+    public String toString() {
+        return "__";
+    }
+
 }
