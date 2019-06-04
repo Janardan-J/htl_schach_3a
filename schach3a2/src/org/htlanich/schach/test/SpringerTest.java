@@ -16,10 +16,11 @@ class SpringerTest {
     private SpielFeld f1 = null;
     private SpielFeld f2 = null;
 
+
     @BeforeEach
     void setUp() throws FileNotFoundException {
-        this.f1 = SpielFeldIO.einlesen("testfelder/S1.txt");
-        this.f2 = SpielFeldIO.einlesen("testfelder/S2_waehrendSpiel.txt");
+        this.f1 = SpielFeldIO.einlesen("testfelder//S1.txt");
+        this.f2 = SpielFeldIO.einlesen("testfelder//S2_waehrendSpiel.txt");
     }
 
     @AfterEach
@@ -37,7 +38,7 @@ class SpringerTest {
     void testStartpositionNichtOk2() {
         Springer s1 = (Springer) f2.getFeld(4, 5);
         boolean nichtOk2 = s1.spielzugMoeglich(f2, new Position(4, 5), new Position(2, 4));
-        Assert.assertFalse(nichtOk2);
+        Assert.assertTrue(nichtOk2);
     }
 
     @Test
