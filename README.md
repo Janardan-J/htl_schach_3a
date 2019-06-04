@@ -14,7 +14,7 @@ A chess game for practicing object-oriented programming in Java. This repository
 
 * Springer: Matteo, Leonhard
 
-* König: Emre
+* König: Emre, Joshua
 
 * Dame: Daniel S.
 

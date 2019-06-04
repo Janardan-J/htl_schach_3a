@@ -14,7 +14,7 @@ public class Turm extends Figur {
 	{
 		super(farbeWeiss, false);
 	}
-	public Turm(boolean farbeWeiss, boolean bewegt) {
+	public Turm(boolean farbeWeiss, boolean bewegt){
 		super(farbeWeiss, bewegt);
 		// TODO implement
 	}
@@ -25,7 +25,6 @@ public class Turm extends Figur {
 	}
 
 	public boolean spielzugMoeglich(SpielFeld sp, Position von, Position nach) {
-		// TODO implement
 		return false;
 	}
 	
