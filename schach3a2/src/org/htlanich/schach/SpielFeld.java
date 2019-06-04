@@ -2,6 +2,7 @@ package org.htlanich.schach;
 
 public class SpielFeld {
 
+	//(0,0) ist links oben
     private Feld[][] mat;
     private boolean werAmZug;
 
@@ -30,7 +31,7 @@ public class SpielFeld {
         this.werAmZug = werAmZug;
     }
 
-    // Spielfeld über Konsole Augeben
+    // Spielfeld ï¿½ber Konsole Augeben
     public void ausgabe() {
         for (Feld[] aMat : mat) {
             for (int j = 0; j < mat.length; j++) {
