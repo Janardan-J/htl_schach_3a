@@ -9,9 +9,10 @@ public class Position
 		this.x = x;
 		this.y = y;
 	}
-	
-	
-		
-	
-	
+
+	@Override
+	public boolean equals(Object obj) {
+		Position p = (Position)obj;
+		return x == p.x && y == p.y;
+	}
 }

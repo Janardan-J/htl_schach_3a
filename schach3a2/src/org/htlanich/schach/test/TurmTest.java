@@ -13,6 +13,8 @@ import java.io.FileNotFoundException;
 class TurmTest {
 
     private SpielFeld f1 = null;
+    private SpielFeld f2 = null;
+
 
     @BeforeEach
     void setUp() throws FileNotFoundException {
@@ -30,6 +32,12 @@ class TurmTest {
     void testSpielzugMoeglich2() {
         Turm t = (Turm) f1.getFeld(7, 7);
         boolean m1 = t.spielzugMoeglich(f1, new Position(7, 7), new Position(7, 6));
+        Assert.assertFalse(m1);
+    }
+    
+    void testSpielzugMoeglich3() {
+        Turm t = (Turm) f1.getFeld(7, 7);
+        boolean m1 = t.spielzugMoeglich(f1, new Position(7, 7), new Position(0, 7));
         Assert.assertFalse(m1);
     }
 
