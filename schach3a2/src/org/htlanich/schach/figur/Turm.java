@@ -5,7 +5,7 @@ import org.htlanich.schach.SpielFeld;
 
 /**
  * Die Klasse Turm
- * @author albert
+ * @author Simon Egger
  *
  */
 public class Turm extends Figur {
@@ -25,7 +25,10 @@ public class Turm extends Figur {
 	}
 
 	public boolean spielzugMoeglich(SpielFeld sp, Position von, Position nach) {
-		return false;
+		if(spielZugMoeglichgerade(sp, von, nach))
+		{
+			return true;
+		}else return false;
 	}
 	
 	@Override
