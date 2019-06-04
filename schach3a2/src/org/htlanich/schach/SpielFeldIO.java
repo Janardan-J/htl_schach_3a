@@ -6,17 +6,23 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+/**
+ * Bootstrap & Klasse mit statischen Funktionen zum Einlesen von Feldateien
+ *
+ * @author albert
+ * @since 28.05.2019
+ */
 public class SpielFeldIO {
 
     /**
-     * @param f z.B. BW oder __
-     * @return ein Objekt vom Typ Feld, wenn es ein leeres Feld ist,
-     * eine konkrete Figur, wenn es eine Spielfigur ist
-     * Factory
+     * Liest ein Feld in String-Form ein und konvertiert es in Feld bzw. eine Figur
+     *
+     * @param feld das zu lesende Feld, z.B. "BW" (Weißer Bauer) oder "__" (Leeres Feld)
+     * @return ein Objekt vom Typ Feld oder eines seiner Subklassen
      */
-    private static Feld leseFeld(String f) {
-        char typ = f.charAt(0); //z.B Bauer
-        char farbe = f.charAt(1); //z.B. W für Weiss
+    private static Feld leseFeld(String feld) {
+        char typ = feld.charAt(0); //z.B Bauer
+        char farbe = feld.charAt(1); //z.B. W für Weiss
         boolean farbeW = (farbe == 'W');
 
         switch (typ) {
@@ -37,7 +43,14 @@ public class SpielFeldIO {
         }
     }
 
-    static public SpielFeld einlesen(String fName) throws FileNotFoundException {
+    /**
+     * Liest eine Felddatei ein und wandelt alle Felder in Strings um
+     *
+     * @param fName der relative Dateipfad zur Felddatei
+     * @return ein umgewandeltes/ausgelesenes Spielfeld-Objekt
+     * @throws FileNotFoundException wenn die Datei nicht gefunden werden kann
+     */
+    private static SpielFeld einlesen(String fName) throws FileNotFoundException {
         Scanner s = new Scanner(new File(fName));
         int zeile = 0;
         Feld[][] feld = new Feld[8][8];
@@ -54,7 +67,11 @@ public class SpielFeldIO {
         return new SpielFeld(feld);
     }
 
-
+    /**
+     * Bootstrap function
+     *
+     * @param args Java program arguments
+     */
     public static void main(String[] args) {
         try {
             SpielFeld f = SpielFeldIO.einlesen("start.txt");
