@@ -1,4 +1,4 @@
-TB|SB|LB|KB|DB|LB|SB|
+TB|SB|LB|KB|DB|LB|SB|__
 BB|BB|BB|BB|BB|BB|BB|BB
 __|__|__|__|__|__|__|__
 __|__|__|__|__|__|__|__
