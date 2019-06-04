@@ -50,7 +50,7 @@ public class SpielFeldIO {
      * @return ein umgewandeltes/ausgelesenes Spielfeld-Objekt
      * @throws FileNotFoundException wenn die Datei nicht gefunden werden kann
      */
-    private static SpielFeld einlesen(String fName) throws FileNotFoundException {
+    public static SpielFeld einlesen(String fName) throws FileNotFoundException {
         Scanner s = new Scanner(new File(fName));
         int zeile = 0;
         Feld[][] feld = new Feld[8][8];
