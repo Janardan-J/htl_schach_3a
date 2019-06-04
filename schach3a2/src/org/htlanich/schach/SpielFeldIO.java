@@ -21,8 +21,8 @@ public class SpielFeldIO {
      * @return ein Objekt vom Typ Feld oder eines seiner Subklassen
      */
     private static Feld leseFeld(String feld) {
-        char typ = feld.charAt(0); //z.B Bauer
-        char farbe = feld.charAt(1); //z.B. W für Weiss
+        char typ = feld.charAt(0); // z.B Bauer
+        char farbe = feld.charAt(1); // z.B. "W" für Weiß
         boolean farbeW = (farbe == 'W');
 
         switch (typ) {
