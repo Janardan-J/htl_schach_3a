@@ -1,5 +1,7 @@
 package org.htlanich.schach;
 
+import java.util.Objects;
+
 /**
  * Positions-Klasse, um eine Position mit X- und Y-Koordinaten auf dem Spielfeld darzustellen
  *
@@ -23,6 +25,11 @@ public class Position {
             return x == p.x && y == p.y;
         }
         return false;
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(this.x, this.y);
     }
 
 }
