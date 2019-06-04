@@ -1,5 +1,7 @@
 package org.htlanich.schach;
 
+import org.htlanich.schach.figur.Figur;
+
 public class SpielFeld {
 
 	//(0,0) ist links oben
@@ -60,6 +62,11 @@ public class SpielFeld {
 
     public Feld getFeld(int x, int y) {
         return mat[x][y];
+    }
+    
+    public boolean isFeld(int x, int y)
+    {
+    	return getFeld(x,y) instanceof Figur;
     }
 
 }
