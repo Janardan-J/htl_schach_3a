@@ -2,7 +2,7 @@ package org.htlanich.schach.test;
 
 import org.htlanich.schach.Position;
 import org.htlanich.schach.SpielFeld;
-import org.htlanich.schach.Spielfeldio;
+import org.htlanich.schach.SpielFeldIO;
 import org.htlanich.schach.figur.Dame;
 import org.junit.Assert;
 import org.junit.jupiter.api.AfterEach;
@@ -17,7 +17,7 @@ class DameTest {
 
     @BeforeEach
     void setUp() throws FileNotFoundException {
-        f1 = Spielfeldio.einlesen("testfelder/D1.txt");
+        f1 = SpielFeldIO.einlesen("testfelder/D1.txt");
     }
 
     @AfterEach
