@@ -3,7 +3,7 @@ package org.htlanich.schach.test;
 import org.htlanich.schach.figur.Bauer;
 import org.htlanich.schach.Position;
 import org.htlanich.schach.SpielFeld;
-import org.htlanich.schach.Spielfeldio;
+import org.htlanich.schach.SpielFeldIO;
 import org.junit.Assert;
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
@@ -17,7 +17,7 @@ class BauerTest {
 
     @BeforeEach
     void setUp() throws FileNotFoundException {
-        this.f1 = Spielfeldio.einlesen("testfelder/B1.txt");
+        this.f1 = SpielFeldIO.einlesen("testfelder/B1.txt");
     }
 
     @AfterEach

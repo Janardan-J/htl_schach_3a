@@ -2,7 +2,7 @@ package org.htlanich.schach.test;
 
 import org.htlanich.schach.Position;
 import org.htlanich.schach.SpielFeld;
-import org.htlanich.schach.Spielfeldio;
+import org.htlanich.schach.SpielFeldIO;
 import org.htlanich.schach.figur.Springer;
 import org.junit.Assert;
 import org.junit.jupiter.api.AfterEach;
@@ -18,8 +18,8 @@ class SpringerTest {
 
     @BeforeEach
     void setUp() throws FileNotFoundException {
-        this.f1 = Spielfeldio.einlesen("testfelder/S1.txt");
-        this.f2 = Spielfeldio.einlesen("testfelder/S2_waehrendSpiel.txt");
+        this.f1 = SpielFeldIO.einlesen("testfelder/S1.txt");
+        this.f2 = SpielFeldIO.einlesen("testfelder/S2_waehrendSpiel.txt");
     }
 
     @AfterEach
