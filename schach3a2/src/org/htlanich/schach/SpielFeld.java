@@ -1,5 +1,10 @@
 package org.htlanich.schach;
 
+import java.util.ArrayList;
+
+import org.htlanich.schach.figur.Figur;
+import org.htlanich.schach.figur.Koenig;
+
 public class SpielFeld {
 
     private Feld[][] mat;
@@ -41,8 +46,45 @@ public class SpielFeld {
         }
     }
 
-    public boolean schach() {
-        return false;
+    private Position holeKoenig (boolean weiﬂ) {
+    	for (int i=0;i<mat.length;i++) {
+    		for (int j=0;j<mat[i].length;j++) {
+    			if(mat[i][j] instanceof Koenig) {
+    				Koenig k=(Koenig)mat[i][j];
+    				if(k.isFarbeWeiss()==weiﬂ) {
+    					return new Position(i,j);
+    				}
+    	    	}
+    		}
+    	}
+    	return null;
+    }
+    
+    private ArrayList<Position> holeFiguren(boolean weiﬂ){
+    	ArrayList<Position>figs=new ArrayList<Position>();
+    	for (int i=0;i<mat.length;i++) {
+    		for (int j=0;j<mat[i].length;j++) {
+    			if(mat[i][j] instanceof Figur) {
+    				Figur f=(Figur)mat[i][j];
+    				if(f.isFarbeWeiss()!=weiﬂ) {
+    					figs.add(new Position(i,j));
+    				}
+    	    	}
+    		}
+    	}
+    	return figs;
+    }
+    
+    public boolean schach(boolean weiﬂ) {
+    	Position k=holeKoenig(weiﬂ);
+    	ArrayList<Position> figs=holeFiguren(!weiﬂ);
+    	for(Position p:figs) {
+    		Figur f=(Figur)mat[p.y][p.x];
+    		if(f.spielzugMoeglich(this,p,k)) {
+    			return true;
+    		}
+    	}
+    	return false;
     }
 
     public boolean schachMatt() {
