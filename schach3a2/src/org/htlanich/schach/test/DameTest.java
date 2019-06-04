@@ -28,56 +28,56 @@ class DameTest {
     @Test
     void testSpielzugMoeglich1() {
         Dame d = (Dame) f1.getFeld(3, 5);
-        boolean m1 = d.spielzugMoeglich(f1, new Position(4, 7), new Position(2, 5));
+        boolean m1 = d.spielzugMoeglich(f1, new Position(3, 5), new Position(2, 5));
         Assert.assertTrue(m1);
     }
 
     @Test
     void testSpielzugMoeglich2() {
         Dame d = (Dame) f1.getFeld(3, 5);
-        boolean m1 = d.spielzugMoeglich(f1, new Position(4, 7), new Position(4, 5));
+        boolean m1 = d.spielzugMoeglich(f1, new Position(3, 5), new Position(4, 5));
         Assert.assertTrue(m1);
     }
 
     @Test
     void testSpielzugMoeglich3() {
         Dame d = (Dame) f1.getFeld(3, 5);
-        boolean m1 = d.spielzugMoeglich(f1, new Position(4, 7), new Position(6, 5));
+        boolean m1 = d.spielzugMoeglich(f1, new Position(3, 5), new Position(6, 5));
         Assert.assertTrue(m1);
     }
 
     @Test
     void testSpielzugMoeglich4() {
         Dame d = (Dame) f1.getFeld(3, 5);
-        boolean m1 = d.spielzugMoeglich(f1, new Position(4, 7), new Position(3, 7));
+        boolean m1 = d.spielzugMoeglich(f1, new Position(3, 5), new Position(3, 7));
         Assert.assertFalse(m1);
     }
 
     @Test
     void testSpielzugMoeglich5() {
         Dame d = (Dame) f1.getFeld(3, 5);
-        boolean m1 = d.spielzugMoeglich(f1, new Position(4, 7), new Position(5, 6));
+        boolean m1 = d.spielzugMoeglich(f1, new Position(3, 5), new Position(5, 6));
         Assert.assertFalse(m1);
     }
 
     @Test
     void testSpielzugMoeglich6() {
         Dame d = (Dame) f1.getFeld(3, 5);
-        boolean m1 = d.spielzugMoeglich(f1, new Position(4, 7), new Position(4, 6));
+        boolean m1 = d.spielzugMoeglich(f1, new Position(3, 5), new Position(4, 6));
         Assert.assertFalse(m1);
     }
 
     @Test
     void testSpielzugMoeglich7() {
         Dame d = (Dame) f1.getFeld(3, 5);
-        boolean m1 = d.spielzugMoeglich(f1, new Position(4, 7), new Position(3, 6));
+        boolean m1 = d.spielzugMoeglich(f1, new Position(3, 5), new Position(3, 6));
         Assert.assertFalse(m1);
     }
 
     @Test
     void testSpielzugMoeglich8() {
         Dame d = (Dame) f1.getFeld(3, 5);
-        boolean m1 = d.spielzugMoeglich(f1, new Position(4, 7), new Position(5, 7));
+        boolean m1 = d.spielzugMoeglich(f1, new Position(3, 5), new Position(5, 7));
         Assert.assertFalse(m1);
     }
 
