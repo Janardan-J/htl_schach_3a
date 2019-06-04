@@ -15,7 +15,7 @@ import java.io.FileNotFoundException;
  * @author Joshua Winkler
  * @since 04.06.2019
  */
-class KoneigTest {
+class KoenigTest {
 
     private SpielFeld f1 = null;
 
